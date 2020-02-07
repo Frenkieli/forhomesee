@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>感官治療</title>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js'></script>
+</head>
+<body>
+  <input type="text" name="id" id="id" value="fr123456">
+  <input type="text" name="password" id="password" value="fr123456">
+  <input type="text" name="name" id="name" value="fr123456">
+  <button id="lonin">登入按鈕</button>
+  <button id="testsingin">建立帳號</button>
+  <script>
+    document.getElementById('testsingin').addEventListener('click',async function(e){
+      let data = {
+        id:document.getElementById('id').value,
+        password:document.getElementById('password').value,
+        name:document.getElementById('name').value
+      }
+      let result = await axios.put('admin',data);
+      console.log(result);
+    })
+    document.getElementById('lonin').addEventListener('click',async function(e){
+      let data = {
+        id:document.getElementById('id').value,
+        password:document.getElementById('password').value,
+      }
+      let result = await axios.post('admin',data);
+      console.log(result);
+      if(result.data){
+        let form = document.createElement('form');
+        form.method = 'post';
+        form.action = '';
+        let input = document.createElement('input');
+        input.type = 'text';
+        input.name = 'token';
+        input.value = result.data;
+        form.appendChild(input);
+        document.getElementsByTagName('body')[0].appendChild(form);
+        form.style.display='none';
+        form.submit();
+        // location.href = 'medical/'+result.data;
+      }
+    })
+  </script>
+</body>
+</html>
