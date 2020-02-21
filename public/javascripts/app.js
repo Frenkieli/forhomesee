@@ -2,99 +2,6 @@ socket = io.connect('ws://192.168.3.125:3001', { query: "name=Robby" }); //這�
 let url = 'userData/';
 
 
-// 方變自己使用的function
-function AE(a,b){
-  b.forEach(v=>{
-    a.appendChild(v);
-  })
-}
-function CE(a,b,c){
-  let d = document.createElement(a);
-  if(b) d.className = b;
-  if(c) d.id = c;
-  return d;
-}
-
-function axiosGet(url){
-  return new Promise(async function(resolve,reject){
-    let result = await axios({
-      method: 'get',
-      url: url,
-      headers:{
-        'authorization': 'Bearer ' + token_key,
-      }
-    })
-    resolve(result);
-  })
-}
-function axiosPost(url,data){
-  return new Promise(async function(resolve,reject){
-    let result = await axios({
-      method: 'post',
-      url: url,
-      data:data,
-      headers:{
-        'authorization': 'Bearer ' + token_key,
-      }
-    })
-    resolve(result);
-  })
-}
-function axiosPostForm(url,data){
-  return new Promise(async function(resolve,reject){
-    let result = await axios({
-      method: 'post',
-      url: url,
-      data:data,
-      headers:{
-        "Content-Type": "multipart/form-data",
-        'authorization': 'Bearer ' + token_key
-      }
-    })
-    resolve(result);
-  })
-}
-function axiosPut(url,data){
-  return new Promise(async function(resolve,reject){
-    let result = await axios({
-      method: 'put',
-      url: url,
-      data:data,
-      headers:{
-        'authorization': 'Bearer ' + token_key,
-      }
-    })
-    resolve(result);
-  })
-}
-function axiosDelete(url){
-  return new Promise(async function(resolve,reject){
-    let result = await axios({
-      method: 'delete',
-      url: url,
-      headers:{
-        'authorization': 'Bearer ' + token_key,
-      }
-    })
-    resolve(result);
-  })
-}
-function axiosDeleteFile(url,data){
-  return new Promise(async function(resolve,reject){
-    let result = await axios({
-      method: 'delete',
-      url: url,
-      data:data,
-      headers:{
-        'authorization': 'Bearer ' + token_key,
-      }
-    })
-  })
-}
-
-
-
-
 
 // socket.on('message', (obj) => {
 //   console.log(obj);
@@ -108,119 +15,118 @@ function axiosDeleteFile(url,data){
 // socket.emit('message', data);
 
 
-function scrollWindow() {
-  let h = document.querySelector('.chats');
-  h.scrollTo(0, h.scrollHeight);
-}
+// function scrollWindow() {
+//   let h = document.querySelector('.chats');
+//   h.scrollTo(0, h.scrollHeight);
+// }
 
-document.querySelector('button').addEventListener('click', () => {
-  Send();
-});
+// document.querySelector('button').addEventListener('click', () => {
+//   Send();
+// });
 
-function Send() {
-  let name = document.querySelector('#name').value;
-  let msg = document.querySelector('#msg').value;
-  if (!msg && !name) {
-    alert('請輸入大名和訊息');
-    return;
-  }
-  let data = {
-    name: name,
-    msg: msg,
-  };
-  socket.emit('message', data);
-  document.querySelector('#msg').value = '';
-}
+// function Send() {
+//   let name = document.querySelector('#name').value;
+//   let msg = document.querySelector('#msg').value;
+//   if (!msg && !name) {
+//     alert('請輸入大名和訊息');
+//     return;
+//   }
+//   let data = {
+//     name: name,
+//     msg: msg,
+//   };
+//   socket.emit('message', data);
+//   document.querySelector('#msg').value = '';
+// }
 
-socket.on('message', (obj) => {
-  console.log(obj);
-  appendData([obj]);
-});
+// socket.on('message', (obj) => {
+//   console.log(obj);
+//   appendData([obj]);
+// });
 
-socket.on('history', (obj) => {
-  // console.log(obj);
-  if (obj.length > 0) {
-    appendData(obj);
-  }
-});
+// socket.on('history', (obj) => {
+//   // console.log(obj);
+//   if (obj.length > 0) {
+//     appendData(obj);
+//   }
+// });
 
-socket.on('console', (obj) => {
-  console.log(obj);
-});
-socket.on('popMessage', (obj) => {
-  popMessage.ok(obj, 3000)
-});
+// socket.on('console', (obj) => {
+//   console.log(obj);
+// });
+// socket.on('popMessage', (obj) => {
+//   popMessage.ok(obj, 3000)
+// });
 
-socket.on('deleteMessage',obj => {
-  console.log(obj);
-  document.getElementById(obj._id).remove();
+// socket.on('deleteMessage',obj => {
+//   console.log(obj);
+//   document.getElementById(obj._id).remove();
 
-  popMessage.ok('資料被刪除', 3000)
-})
+//   popMessage.ok('資料被刪除', 3000)
+// })
 
-socket.on('updateMessage',obj => {
-  let element = document.getElementById(obj._id).getElementsByClassName( 'msg' )[0];
-  element.innerHTML = '';
-  element.innerText = obj.msg;
-  popMessage.ok('資料被更新', 3000)
-})
+// socket.on('updateMessage',obj => {
+//   let element = document.getElementById(obj._id).getElementsByClassName( 'msg' )[0];
+//   element.innerHTML = '';
+//   element.innerText = obj.msg;
+//   popMessage.ok('資料被更新', 3000)
+// })
 
-socket.on('createRecord',obj => {
-  console.log('創建結果' ,obj);
-})
+// socket.on('createRecord',obj => {
+//   console.log('創建結果' ,obj);
+// })
 
 
 
-function appendData(obj) {
-
-  let el = document.querySelector('.chats');
-  let html = el.innerHTML;
-  obj.forEach(element => {
-    let chat = CE('div','chat', element._id ? element._id　:　'');
-    let push = [];
-      let group= CE('div','group');
-      push.push(group);
-        let name = CE('div','name');
-        name.innerText = element.name + '：';
-        let msg  = CE('div','msg');
-        msg.innerText = element.msg;
-        msg.addEventListener('click',function(e){
-          let edit = CE('input');
-          edit.type = 'text';
-          edit.value = e.target.innerText;
-          e.target.innerText = '';
-          e.target.appendChild(edit);
-          edit.focus();
-          edit.addEventListener('keyup',function(e){
-            e.preventDefault();
-            if (e.keyCode === 13) {
-              element.msg = edit.value;
-              socket.emit('updateMessage', element);
-              let text = edit.value;
-              edit.remove();
-              msg.innerText = text;
-            }
-          })
-        })
-      AE(group,[name,msg]);
-      let time = CE('div','time');
-      push.push(time);
-      time.innerText = moment(element.time).fromNow();
-      if(element._id){
-        let deleteMe = CE('div','delete');
-        push.push(deleteMe);
-        deleteMe.innerText = 'X';
-        deleteMe.title = '刪除這筆資訊';
-        deleteMe.addEventListener('click',function(e){
-          socket.emit('deleteMessage', element);
-        })
-      }
-    AE(chat,push);
-    AE(el,[chat]);
-  });
-  // el.innerHTML = html.trim();
-  scrollWindow();
-}
+// function appendData(obj) {
+//   let el = document.querySelector('.chats');
+//   let html = el.innerHTML;
+//   obj.forEach(element => {
+//     let chat = CE('div','chat', element._id ? element._id　:　'');
+//     let push = [];
+//       let group= CE('div','group');
+//       push.push(group);
+//         let name = CE('div','name');
+//         name.innerText = element.name + '：';
+//         let msg  = CE('div','msg');
+//         msg.innerText = element.msg;
+//         msg.addEventListener('click',function(e){
+//           let edit = CE('input');
+//           edit.type = 'text';
+//           edit.value = e.target.innerText;
+//           e.target.innerText = '';
+//           e.target.appendChild(edit);
+//           edit.focus();
+//           edit.addEventListener('keyup',function(e){
+//             e.preventDefault();
+//             if (e.keyCode === 13) {
+//               element.msg = edit.value;
+//               socket.emit('updateMessage', element);
+//               let text = edit.value;
+//               edit.remove();
+//               msg.innerText = text;
+//             }
+//           })
+//         })
+//       AE(group,[name,msg]);
+//       let time = CE('div','time');
+//       push.push(time);
+//       time.innerText = moment(element.time).fromNow();
+//       if(element._id){
+//         let deleteMe = CE('div','delete');
+//         push.push(deleteMe);
+//         deleteMe.innerText = 'X';
+//         deleteMe.title = '刪除這筆資訊';
+//         deleteMe.addEventListener('click',function(e){
+//           socket.emit('deleteMessage', element);
+//         })
+//       }
+//     AE(chat,push);
+//     AE(el,[chat]);
+//   });
+//   // el.innerHTML = html.trim();
+//   scrollWindow();
+// }
 // document.getElementById('submit').addEventListener('change',function(e){
 //   let reader = new FileReader();
 //   reader.readAsArrayBuffer();
@@ -488,6 +394,7 @@ document.getElementById('progress_button').addEventListener('click',function(e){
     videoPlayStatus = false;
     for(let i = 0;i<video.length;i++){
       video[i].pause();
+      
     }
   }else{
     videoPlayStatus = true;
@@ -556,6 +463,8 @@ document.getElementById('view_section_edit').addEventListener('click',function(e
 
 
 
+
+
 function mouseProgressmove(e){
   e.preventDefault();
   document.getElementById('progress_bar_color').style.width = document.getElementById('progress_bar_color').offsetWidth + e.movementX +'px';
@@ -585,9 +494,7 @@ function progressCalc(changeNowTime){
     for(let i = 0 ; i < view_section_pick.value ; i++){
       currentPlayListTime += playListTime[i] *1
     }
-      
     for(let i =0 ; i <video.length;i++){
-      
       video[i].currentTime = nowTime * 1 - currentPlayListTime * 1;
     }
   };

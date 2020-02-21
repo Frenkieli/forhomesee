@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <!-- Icons-->
+  <link href="backend/library/css/css/coreui-icons.min.css" rel="stylesheet">
+  <link href="backend/library/css/css/flag-icon.min.css" rel="stylesheet">
+  <link href="backend/library/css/css/font-awesome.min.css" rel="stylesheet">
+  <link href="backend/library/css/css/simple-line-icons.css" rel="stylesheet">
+  <link href="backend/library/css/style.css" rel="stylesheet">
+  <!-- Main styles for this application-->
+  <style>
+    .nav-item{
+      cursor: pointer;
+    }
+    td {
+      text-align: center;
+    }
+    .edit_staus{
+      cursor: pointer;
+      padding: 10px 20px;
+    }
+    .edit_staus:hover{
+      border: 2px solid #0af;
+      padding: 8px 18px;
+    }
+    #token_Time{
+      color: red;
+    }
+  </style>
+</head>
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+  <header class="app-header navbar">
+    <a class="navbar-brand" href="#">
+      <img class="navbar-brand-full" src="images/logo.png" width="30" height="30" alt="CoreUI Logo">
+      <img class="navbar-brand-minimized" src="images/logo.png" width="30" height="30" alt="CoreUI Logo">
+    </a>
+    <div class="ml-auto mr-1">
+      登入人員 : <%= name %>
+    </div>
+    <div class="mr-2" id='token_Time'>
+      本次登入將在<%= time %>後失效
+    </div>
+    <div class="mr-3">
+      <a href="/" class="btn btn-block btn-dark mr-2" type="button">登出</a>
+    </div>
+  </header>
+  <div class="app-body">
+    <div class="sidebar">
+      <nav class="sidebar-nav ps">
+        <ul class="nav">
+          <li class="nav-title">hospital</li>
+          <li id="memner_manage" class="nav-item">
+            <p class="nav-link">
+              <i class="nav-icon icon-user"></i> 會員管理</p>
+          </li>
+          <li id="medical_manage" class="nav-item">
+            <p class="nav-link">
+              <i class="nav-icon icon-list"></i> 住民紀錄</p>
+          </li>
+          <li class="nav-title">Vendor</li>
+          <li id="card_manage" class="nav-item">
+            <p class="nav-link">
+              <i class="nav-icon icon-settings"></i> 卡片管理</p>
+          </li>
+          <li id="log_manage" class="nav-item">
+            <p class="nav-link">
+              <i class="nav-icon icon-book-open"></i> 查詢紀錄</p>
+          </li>
+        </ul>
+      <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></nav>
+      <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+    </div>
+    <main class="main">
+      <div id="main_body" class="container-fluid mt-5"></div>
+    </main>
+  </div>
+  <footer class="app-footer">
+    <div class="ml-auto">
+      <span>Powered by</span>
+      <a href="https://coreui.io">CoreUI</a>
+    </div>
+  </footer>
+  <!-- CoreUI and necessary plugins-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js'></script>
+  <script src="backend/library/js/jquery.min.js"></script>
+  <script src="backend/library/js/popper.min.js"></script>
+  <script src="backend/library/js/bootstrap.min.js"></script>
+  <script src="backend/library/js/pace.min.js"></script>
+  <script src="backend/library/js/perfect-scrollbar.min.js"></script>
+  <script src="backend/library/js/coreui.min.js"></script>
+  <!-- 下方自由添加區 -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/locale/zh-tw.js'></script>
+  <script src="./javascripts/popMessage.js"></script>
+  <script src="javascripts\axiosItem.js"></script>
+  <script>
+    function AEA(elementBox,elementArray){
+      elementArray.forEach(v=>{
+        elementBox.appendChild(v);
+      })
+      return elementBox;
+    }
+    function AE(elementBox,element){
+      elementBox.appendChild(element);
+      return elementBox;
+    }
+    function CE(elementType,elementClassName,elementId){
+      let element = document.createElement(elementType);
+      if(elementClassName) element.className = elementClassName;
+      if(elementId) element.id = elementId;
+      return element;
+    }
+
+    function $id(elementName) {
+      return document.getElementById(elementName)
+    }
+    function $qs(elementName) {
+      return document.querySelector(elementName)
+    }
+    var token_key = '<%= token_key %>';
+    var axiosItem = new AxiosItem();
+
+    // 統一用一個刪除按鈕
+    let deleteButtonEven = function (e){
+          return new Promise(async function (resolve, reject) {
+            let parentNode = e.target.parentNode.parentNode.parentNode;
+            let id = parentNode.id;
+            let result = await axiosItem.delete(bodyBuild.nowEdit + '/' + id);
+            console.log(result);
+            if(result.data){
+              resolve(true);
+            }else{
+              reject(false);
+            }
+          })
+        }
+
+    class BodyBuild{
+      constructor(e){
+        this.mainBody = document.getElementById('main_body');
+
+        //變數統一管理
+        this.memberTableHeader = ['ID','名稱','最後修改時間','狀態','管理權限','修改'];
+        this.medicalTableHeader = ['名稱','卡片號碼','逾期日','最後修改時間'];
+        this.cardTableHeader = ['卡片ID','最後修改時間','狀態','修改'];
+        this.logTableHeader = ['修改人','內容','修改時間'];
+        // 
+        this.nowEdit;
+      }
+      resetBody(){
+        this.mainBody.innerHTML = '';
+      }
+      setBody(elementArray){
+        let body = CE('div' , 'animated fadeIn');
+        AEA(body,elementArray);
+        AE(this.mainBody,body);
+      }
+      tableTrThMaker(dataArray){
+        let tr = CE('tr');
+        dataArray.forEach(value=>{
+          let td = CE('th');
+          td.innerText = value;
+          AE(tr,td);
+        })
+        return tr;
+      }
+      tableTrTdMaker(id,dataArray, typeArray, updateFunction, deleteFunction){
+        let tr = CE('tr', '', id);
+        typeArray.forEach((v,i)=>{
+          AE(tr, this.createObj(v, dataArray[i], updateFunction, deleteFunction));
+        })
+        return tr;
+      }
+      createObj(v,data = '', updateFunction, deleteFunction, createFunction, notCreate = true){
+        let td = CE('td');
+          let inBox;
+          function statusNodes2Event(e){
+            let element = e.target;
+            switch (element.dataset.status) {
+              case 'normal':
+                element.dataset.status = 'block';
+                element.className = 'badge badge-secondary edit_staus';
+                element.innerText = '黑名單';
+                break;
+              case 'block':
+                element.dataset.status = 'normal';
+                element.className = 'badge badge-success edit_staus';
+                element.innerText = '正常';
+                break;
+              default:
+                element.dataset.status = 'normal';
+                element.className = 'badge badge-success edit_staus';
+                element.innerText = '正常';
+                break;
+            }
+          }
+          switch (v) {
+            case 0:   //　單純文字顯示
+            inBox = CE('input', 'form-control');
+              inBox.type = 'text';
+              inBox.value = data;
+              inBox.readOnly = notCreate;
+              break;
+            case 1:   // 顯示日期月份
+              inBox = CE('span');
+              td.style.verticalAlign = 'middle';
+              inBox.innerText = moment(notCreate ? data : Date.now()).format('L');
+              break;
+            case 2:   // 狀態顯示
+              inBox = CE('span');
+              td.style.verticalAlign = 'middle';
+              switch (notCreate ? data : 0) {
+                case 0:
+                  inBox.className = 'badge badge-success';
+                  inBox.innerText = '正常';
+                  inBox.dataset.status = 'normal';
+                  break;
+                case 1:
+                  inBox.className = 'badge badge-secondary';
+                  inBox.innerText = '黑名單';
+                  inBox.dataset.status = 'block';
+                  break;
+                default:
+                  inBox.className = 'badge badge-warning';
+                  inBox.innerText = '異常';
+                  inBox.dataset.status = 'unknown';
+                  break;
+              }
+              break;
+            case 97:  //輸入密碼使用
+              inBox = CE('input', 'form-control');
+              inBox.type = 'text';
+              inBox.placeholder = '請輸入密碼';
+              inBox.readOnly = notCreate;
+              break;
+            case 98:  //狀態check用
+              inBox                         = CE('label' , 'switch switch-label switch-info');
+              inBox.style.marginBottom      = '0px';
+              td.style.verticalAlign        = 'middle';
+              inBox.style.verticalAlign     = 'middle';
+              let inputCheck                = CE('input' , 'switch-input');
+              inputCheck.type               = 'checkbox';
+              inputCheck.checked            = notCreate ? (data == 1 ? true :false) : false;
+              let spanBox                   = CE('span', 'switch-slider');
+              spanBox.dataset.checked       = '✓';
+              spanBox.dataset.unchecked     = '✕';
+              AEA(inBox,[inputCheck,spanBox]);
+              break;
+            case 99:  //編輯按鈕用
+              inBox                         = CE('div');
+              // 不是創造的話跑這個
+              if(notCreate){
+                let editButton                = CE('button', 'btn btn-block btn-info');
+                editButton.innerText          ='編輯';
+                editButton.style.float        = 'right';
+                editButton.style.marginTop    = '0';
+                let doneButton                = CE('button', 'col-6 btn btn-block btn-success');
+                doneButton.innerText          ='完成';
+                doneButton.style.float        = 'right';
+                doneButton.style.marginTop    = '0';
+                doneButton.style.display      = 'none';
+                let deleteButton              = CE('button', 'col-6 btn btn-block btn-danger');
+                deleteButton.innerText        ='刪除';
+                deleteButton.style.float      = 'right';
+                deleteButton.style.marginTop  = '0';
+                deleteButton.style.display    = 'none';
+                editButton.addEventListener('click',function(e){
+                  editButton.style.display    = 'none';
+                  doneButton.style.display    = 'block';
+                  deleteButton.style.display  = 'block';
+                  let parentNode              = e.target.parentNode.parentNode.parentNode;
+                  let inputNodes              = parentNode.getElementsByTagName('input');
+                  for(let i = 0;i<inputNodes.length;i++){
+                    inputNodes[i].readOnly    = false;
+                  }
+                  if(parentNode.querySelector('.badge')){
+                    let statusNodes             = parentNode.querySelector('.badge');
+                    statusNodes.classList.add('edit_staus');
+                    statusNodes.addEventListener('click',statusNodes2Event)
+                  }
+                })
+                doneButton.addEventListener('click', async function(e){
+                  let result = await updateFunction(e);
+                  if(result){
+                    editButton.style.display    = 'block';
+                    doneButton.style.display    = 'none';
+                    deleteButton.style.display  = 'none';
+                    let parentNode              = e.target.parentNode.parentNode.parentNode;
+                    let inputNodes              = parentNode.getElementsByTagName('input');
+                    for(let i = 0;i<inputNodes.length;i++){
+                      inputNodes[i].readOnly    = true;
+                    }
+                    let statusNodes             = parentNode.querySelector('.badge');
+                    statusNodes.classList.remove('edit_staus');
+                    statusNodes.removeEventListener('click',statusNodes2Event);
+                  }else{
+                    popMessage.err('請確認輸入的資訊', 2000);
+                  }
+                })
+                deleteButton.addEventListener('click', async function(e){
+                  let result = await deleteFunction(e);
+                  if(result){
+                    e.target.parentNode.parentNode.parentNode.remove();
+                  }else{
+                    popMessage.err('請確認輸入的資訊', 2000);
+                  }
+                })
+                AEA(inBox,[editButton,deleteButton,doneButton]);
+              }else{
+                let createButton                = CE('button', 'col-12 btn btn-block btn-primary');
+                createButton.innerText          = '建立';
+                createButton.addEventListener('click',createFunction);
+                AE(inBox, createButton);
+              }
+              break;
+            default:
+              inBox                             = CE('span');
+              break;
+          }
+          AE(td,inBox)
+          return td;
+      }
+      tableAddTrMaker(typeArray, createFunction){
+        let tr = CE('tr');
+        console.log(typeArray,'typeArray')
+        typeArray.forEach(value=>{
+          AE(tr, this.createObj(value,'','','',createFunction,false));
+        })
+        return tr;
+      }
+      mainBodyBuild(data,dataSort, title, tableHeaderArray, dataType, doneButtonEven, createButtonEven, createType = false){
+        this.resetBody();
+        let inElementArray = [];
+        let row = CE('div', 'row');
+        let col = CE('div', 'col-lg-12');
+        let card = CE('div', 'card');
+        let cardHeader = CE('div', 'card-header');
+        let cardHeaderIcon = CE('i', 'fa fa-align-justify');
+        let cardHeaderSpan = CE('span');
+        cardHeaderSpan.innerText = title;
+        AEA(cardHeader,[cardHeaderIcon,cardHeaderSpan]);
+        let cardBody = CE('div', 'card-body');
+        let cardBodyTable = CE('table', 'table table-responsive-sm table-bordered table-striped table-sm');
+        AE(cardBody,cardBodyTable);
+        let tableHeader = CE('thead');
+        AE(tableHeader,this.tableTrThMaker(tableHeaderArray,true));
+        let tableBody = CE('tbody');
+        AEA(cardBodyTable,[tableHeader,tableBody]);
+        if(Array.isArray(data)){
+          data.forEach(value=>{
+            let dataArray= dataSort(value);
+            AE(tableBody,this.tableTrTdMaker(value._id,dataArray,dataType,doneButtonEven,deleteButtonEven));
+          })
+        }
+        if(createType){
+          AE(tableBody,this.tableAddTrMaker(createType,createButtonEven)) //看看上面有幾個
+        }
+        AEA(card,[cardHeader,cardBody])
+        AE(col,card);
+        AE(row,col);
+        this.setBody([row])
+      }
+
+
+
+      // 繪源管理的
+      async memnerManage(){
+        let result = await axiosItem.get('admin');
+        let dataType = [0,0,1,2,98,99];
+        let createType = [0,0,97,'','',99];
+        let dataSort = function (value){
+          return [value.id,value.name,value.time,value.status,value.permission];
+        }
+        let doneButtonEven = function (e){
+          return new Promise(async function (resolve, reject) {
+            let parentNode  = e.target.parentNode.parentNode.parentNode;
+            let dataNode    = parentNode.getElementsByTagName('input');
+            let statusNodes = parentNode.querySelector('.badge');
+            let status      = -1;
+            switch (statusNodes.dataset.status) {
+              case 'normal':
+                status = 0;
+                break;
+              case 'block':
+                status = 1; 
+                break;
+            
+              default:
+                break;
+            }
+            let data = {
+              id        : dataNode[0].value,
+              name      : dataNode[1].value,
+              status    : status,
+              permission: dataNode[2].checked ? 1 : 0
+            }
+            let result = await axiosItem.post(bodyBuild.nowEdit + '/modify/' + parentNode.id,data);
+            console.log(result);
+            if(result.data){
+              resolve(true);
+            }else{
+              reject(false);
+            }
+          })
+        }
+        let createButtonEven = async function (e) {
+          let parentNode  = e.target.parentNode.parentNode.parentNode;
+          let input       = parentNode.getElementsByTagName('input');
+          console.log(parentNode);
+          if(input[2].value.length < 6 || input[2].value.length > 30){
+            popMessage.err('密碼長度要在6到30之間',2000)
+          }else if(input[0].value.length != 0 && input[1].value.length != 0){
+            let data = {
+              id        : input[0].value,
+              password  : input[2].value,
+              name      : input[1].value,
+              permission: 0,
+              status    : 0
+            }
+            let result = await axiosItem.put(bodyBuild.nowEdit,data);
+            if(result.data){
+              let insertNode = parentNode.parentNode;
+              let data = [result.data.id,result.data.name,result.data.time,result.data.status,result.data.permission];
+              insertNode.insertBefore(bodyBuild.tableTrTdMaker(result.data._id,data,dataType,doneButtonEven,deleteButtonEven),parentNode);
+            }else{
+              popMessage.err('ID已被註冊', 2000);
+            }
+          }else{
+            popMessage.err('不可以為空值',2000)
+          }
+        }
+        this.mainBodyBuild(result.data, dataSort, '會員管理', this.memberTableHeader, dataType, doneButtonEven, createButtonEven, createType);
+      }
+
+
+      // 住民錄的function 現在還沒有東西
+      async medicalManage(){
+        let result = await axiosItem.get('medicalrecords');
+        let dataType = [0,0,1,1];
+        console.log(result)
+        let dataSort = function (value){
+          return [value.name, value.cardId, value.endTime, value.time];
+        }
+        this.mainBodyBuild(result.data, dataSort, '住民管理', this.medicalTableHeader, dataType);
+      }
+
+
+
+      // 卡片的function
+      async cardManage(){
+        console.log('cardManage')
+        let result = await axiosItem.get(this.nowEdit);
+        console.log(result);
+        let dataType = [0,1,2,99];
+        let createType = [0,'','',99];
+        let dataSort = function (value){
+          return [value.cardId,value.time,value.status];
+        }
+        let doneButtonEven = async function (e){
+          return new Promise(async function (resolve, reject) {
+            let parentNode  = e.target.parentNode.parentNode.parentNode;
+            let input       = parentNode.getElementsByTagName('input');
+            let statusNodes = parentNode.querySelector('.badge');
+            let status      = -1;
+            switch (statusNodes.dataset.status) {
+              case 'normal':
+                status = 0;
+                break;
+              case 'block':
+                status = 1; 
+                break;
+              default:
+                break;
+            }
+            let data = {
+              cardId: input[0].value,
+              status: status
+            }
+            let result = await axiosItem.post(bodyBuild.nowEdit + '/modify/' + parentNode.id,data);
+              console.log(result);
+              if(result.data){
+                resolve(true);
+              }else{
+                reject(false);
+            }
+          })
+        }
+        let createButtonEven = async function (e) {
+          let parentNode  = e.target.parentNode.parentNode.parentNode;
+          let input       = parentNode.getElementsByTagName('input');
+          console.log(parentNode);
+          let data = {
+            cardId  : input[0].value,
+            status  : 0
+          }
+          let result = await axiosItem.put(bodyBuild.nowEdit,data);
+          console.log(result);
+          if(result.data){
+              let insertNode = parentNode.parentNode;
+              let data = [result.data.cardId,result.data.time,result.data.status];
+              insertNode.insertBefore(bodyBuild.tableTrTdMaker(result.data._id,data,dataType,doneButtonEven,deleteButtonEven),parentNode);
+            }else{
+              popMessage.err('卡號已經存在', 2000);
+            }
+        }
+
+        this.mainBodyBuild(result.data, dataSort, '定位卡片管理', this.cardTableHeader, dataType, doneButtonEven, createButtonEven, createType);
+        console.log(result);
+      }
+      async logManage(){
+        let result = await axiosItem.get('log');
+        let dataType = [0,0,1];
+        console.log(result)
+        let dataSort = function (value){
+          return [value.id, value.msg, value.time];
+        }
+        this.mainBodyBuild(result.data, dataSort, '歷史紀錄', this.logTableHeader, dataType);
+      }
+    }
+    function init(){
+      bodyBuild.nowEdit = 'admin';
+      bodyBuild.memnerManage();
+      document.getElementById('memner_manage').querySelector('.nav-link').classList.add('active');
+      function pickActive(element){
+        document.querySelector('.nav-link.active').classList.remove('active');
+        element.classList.add('active');
+      }
+      document.querySelector('#memner_manage .nav-link').addEventListener('click',function(e){
+        bodyBuild.nowEdit = 'admin';
+        bodyBuild.memnerManage(e);
+        pickActive(e.target);
+      })
+      document.querySelector('#medical_manage .nav-link').addEventListener('click',function(e){
+        bodyBuild.nowEdit = '';
+        bodyBuild.medicalManage(e);
+        pickActive(e.target);
+      })
+      document.querySelector('#card_manage .nav-link').addEventListener('click',function(e){
+        bodyBuild.nowEdit = 'locationCard';
+        bodyBuild.cardManage(e);
+        pickActive(e.target);
+      })
+      document.querySelector('#log_manage .nav-link').addEventListener('click',function(e){
+        bodyBuild.nowEdit = 'log';
+        bodyBuild.logManage(e);
+        pickActive(e.target);
+      })
+    }
+    var bodyBuild = new BodyBuild();
+
+    window.addEventListener('load',init);
+  </script>
+</body>
+
+</html>

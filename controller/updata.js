@@ -5,10 +5,13 @@
 var fs = require('fs');
 var multer = require('multer');
 var db = require('../controller/db');
+var log = require('./log');
 // var upload = multer({ dest: 'userData/' });
+const config = require('../config/config').system;
 
 
-var rootFolder = './userData';
+
+var rootFolder = config.rootFolder;
 var uploadFolder;
 
 const schemaModels = require('../models/schemaModels')
@@ -21,7 +24,7 @@ var createFolder = function (folder) {
   try {
     fs.accessSync(folder);
   } catch (e) {
-    fs.mkdirSync(folder);
+    fs.mkdirSync(folder);    
   }
 };
 createFolder(rootFolder);
@@ -68,35 +71,14 @@ index.updata1 = async function (req, res, next) {
   createFolder(uploadFolder);
   next();
 }
-index.updata2 = upload.array('logo');
+index.updata2 = upload.array('file');
 index.updata3 = function (req, res, next) {
-  var files = req.files;
-  // files.forEach(file => {
-  //   console.log('檔案型別：%s', file.mimetype);
-  //   console.log('原始檔名：%s', file.originalname);
-  //   console.log('檔案大小：%s', file.size);
-  //   console.log('檔案儲存路徑：%s', file.path);
-  // });
-  socket.emitMessage('popMessage', '上傳檔案完成');
+  socket.emitMessage('notice', {
+    str: '病歷號：' + req.params.id +'，檔案已新增' 
+  });
+  log.storeLog(req.token.payload.id , '新增了' + req.params.id + '的住民治療方案檔案' , 1, 1);
   res.send({ okDataName: req.okDataName, errorDataName: req.errorDataName });
 }
-
-function deleteall(path, dataName) {
-  // 刪除整份病例用
-  // var files = [];
-  // if (fs.existsSync(path)) {                     //確認是否存在
-  //   files = fs.readdirSync(path);                //讀取該資料夾內的檔案
-  //   files.forEach(function (file, index) {
-  //     var curPath = path + "/" + file;
-  //     if (fs.statSync(curPath).isDirectory()) {  //這是一個資料夾嗎?
-  //       deleteall(curPath);
-  //     } else { // delete file
-  //       fs.unlinkSync(curPath);
-  //     }
-  //   });
-  //   fs.rmdirSync(path);
-  // }
-};
 
 index.read = function (req, res, next) {
   let id = req.params.id;
@@ -113,11 +95,16 @@ index.delete = function (req, res, next) {
   let data = req.body.id + '/' + req.body.deleteName;
   if (fs.existsSync('userData' + '/' + data)) {
     fs.unlinkSync('userData' + '/' + data);
-    socket.emitMessage('popMessage', '有刪除東西喔!');
+    log.storeLog(req.token.payload.id , '刪除了' + req.body.id + '的'+ req.body.deleteName + '檔案' , 3, 1);
+    socket.emitMessage('notice',{
+      str:'病歷號：' + req.body.id + '，' + req.body.deleteName + '已刪除'
+    })
   } else {
-    socket.emitMessage('popMessage', '不存在喔!');
+    socket.emitMessage('notice',{
+      str:req.body.deleteName + '檔案不存在'
+    })
   }
-  res.end();
+  res.send(true);
 }
 
 module.exports = index;

@@ -1,0 +1,489 @@
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #ccc;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  color: #111;
+}
+
+.section {
+  float: left;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.section.section_edit {
+  padding: 10px;
+  overflow: auto;
+}
+
+.container_item {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.container_item::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container_item #video_list_video_now, .container_item #img_list_img_now, .container_item #music_list_audio_now {
+  display: none !important;
+}
+
+input, button, select {
+  font-family: 'Noto Sans TC', sans-serif;
+  border: none;
+  outline: none;
+}
+
+.field_text {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding-bottom: 3px;
+}
+
+.field_button {
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 16px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 5px;
+  background-color: #DCEDFA;
+  color: #111;
+  position: relative;
+}
+
+.field_button::after {
+  content: '';
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.field_button:hover::after {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 0px solid rgba(0, 0, 0, 0.3);
+  border-right: 0px solid rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #777;
+}
+
+.item {
+  position: relative;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.item p {
+  margin-bottom: 8px;
+}
+
+.button_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.medical_info_title {
+  font-size: 30px;
+  text-align: center;
+  margin: 10px 0 30px;
+}
+
+.edit_medical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0;
+}
+
+.edit_medical .medical_picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 180px;
+  max-height: 360px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border: double 3px rgba(0, 0, 0, 0.3);
+}
+
+.edit_medical .medical_picture label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 100%;
+}
+
+.edit_medical .medical_picture img {
+  width: 100%;
+  max-height: 100%;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.edit_medical .medical_picture #medical_patient_photo_update {
+  display: none;
+}
+
+.edit_medical .medical_info {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.edit_medical .medical_info .item {
+  width: 50%;
+}
+
+.edit_medical .medical_info #medical_info_edit, .edit_medical .medical_info #medical_info_delete, .edit_medical .medical_info #medical_info_create {
+  display: none;
+}
+
+.edit_medical .medical_info .medical_info_search_icon {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+
+.edit_medical .medical_info .medical_info_search_icon img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.edit_medical .medical_info #medical_info_sex {
+  display: none;
+}
+
+.edit_medical .medical_info #medical_info_sex:checked + .medical_info_sex .point {
+  left: 20px;
+}
+
+.edit_medical .medical_info #medical_info_sex:checked + .medical_info_sex {
+  background-color: #0af;
+}
+
+.edit_medical .medical_info .medical_info_sex {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 36px;
+  height: 18px;
+  padding: 2px 1px;
+  border: 1px dotted #333;
+  border-radius: 5px;
+  background-color: #f77;
+}
+
+.edit_medical .medical_info .medical_info_sex span {
+  width: 50%;
+  height: 100%;
+}
+
+.edit_medical .medical_info .medical_info_sex .point {
+  width: 16px;
+  height: 18px;
+  border-radius: 5px;
+  background-color: rgba(100, 100, 100, 0.9);
+  position: absolute;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  left: 2px;
+  top: 2px;
+}
+
+.edit_playlist .edit_playlist_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.edit_playlist #form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.edit_playlist #form .item {
+  width: auto;
+  padding-bottom: 0;
+}
+
+.edit_playlist #form #edit_update_area_file {
+  display: none;
+}
+
+.edit_playlist #form .edit_update_area_file {
+  display: inline-block;
+  font-size: 8px;
+  width: 100px;
+}
+
+.edit_playlist .progress_bar_style {
+  margin: 5px 0;
+}
+
+.edit_playlist .progress_bar_style::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.edit_playlist #playlist_info_update {
+  margin-left: auto;
+}
+
+.edit_playlist .playlist_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+  border: 3px double rgba(0, 0, 0, 0.3);
+}
+
+.edit_playlist .playlist_list .pick {
+  color: #eee !important;
+  width: 40px !important;
+  line-height: 40px !important;
+  background-color: #03c !important;
+}
+
+.edit_playlist .playlist_list div {
+  position: relative;
+  cursor: pointer;
+  height: 150px;
+  width: 20px;
+  padding: 0 5px;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  line-height: 20px;
+  text-align: center;
+  -webkit-box-shadow: 2px 0px 4px #000;
+          box-shadow: 2px 0px 4px #000;
+  border-radius: 0px 10px 10px 0px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.edit_playlist .playlist_list div:hover {
+  color: black;
+  width: 30px;
+  line-height: 30px;
+  background-color: #dbe4ff;
+}
+
+.edit_playlist .playlist_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.edit_playlist .playlist_info .item {
+  width: 25%;
+}
+
+.edit_playlist .playlist_info #playlist_info_create {
+  display: none;
+}
+
+.edit_playlist .playlist_progress_bar .progress_bar {
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: calc(100% - 115px);
+  height: 20px;
+  border: 3px double rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.edit_playlist .playlist_progress_bar .progress_bar .progress_bar_color {
+  background-color: #fa0;
+  position: relative;
+  height: 100%;
+  width: 0;
+  max-width: 100%;
+}
+
+.edit_playlist .playlist_progress_bar .progress_bar .progress_bar_color .progress_bar_line {
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 1px;
+  background-color: #00a;
+}
+
+.edit_playlist .playlist_progress_bar .progress_bar .progress_bar_color .progress_bar_button {
+  position: absolute;
+  height: calc(100% + 6px);
+  width: 20px;
+  top: -3px;
+  right: -10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: #00B7FF solid 3px;
+}
+
+.edit_playlist .playlist_progress_bar .progress_controls {
+  float: right;
+  width: 100px;
+}
+
+.edit_playlist .playlist_progress_bar .progress_time {
+  float: left;
+}
+
+.edit_playlist .playlist_progress_bar .progress_button, .edit_playlist .playlist_progress_bar #progress_button {
+  cursor: pointer;
+  float: right;
+  width: 20px;
+  height: 20px;
+}
+
+.edit_playlist .playlist_progress_bar #progress_button::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 50%, 0% 50%, 0% 0%, 100% 50%, 100% 50%, 0% 100%, 0% 50%, 0% 50%, 0% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 0% 0%, 0% 50%, 0% 50%, 0% 0%, 100% 50%, 100% 50%, 0% 100%, 0% 50%, 0% 50%, 0% 100%, 0% 100%);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.edit_playlist .playlist_progress_bar #progress_button.progress_button_play::after {
+  -webkit-clip-path: polygon(0% 0%, 33.33% 0%, 33.33% 50%, 66.66% 50%, 66.66% 0%, 100% 0%, 100% 100%, 66.66% 100%, 66.66% 50%, 33.33% 50%, 33.33% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 33.33% 0%, 33.33% 50%, 66.66% 50%, 66.66% 0%, 100% 0%, 100% 100%, 66.66% 100%, 66.66% 50%, 33.33% 50%, 33.33% 100%, 0% 100%);
+}
+
+.edit_music_list .music_list_edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.edit_music_list .music_list_edit .item {
+  width: 33.33333%;
+}
+
+.edit_music_list .music_list_audio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.edit_music_list .music_list_audio .item {
+  width: 50%;
+}
+
+.edit_video__list .video_list_edit, .edit_video__list .img_list_edit, .edit_img_list .video_list_edit, .edit_img_list .img_list_edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.edit_video__list .video_list_edit .item, .edit_video__list .img_list_edit .item, .edit_img_list .video_list_edit .item, .edit_img_list .img_list_edit .item {
+  width: 50%;
+}
+
+#logout {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+}
+
+#token_Time {
+  margin-top: 5px;
+  font-size: 10px;
+  color: red;
+}
+
+.edit_zone {
+  position: relative;
+  -webkit-transform: translateX(-110%);
+          transform: translateX(-110%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.list_zone {
+  position: relative;
+  -webkit-transform: translateX(-110%);
+          transform: translateX(-110%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.progressUpdate {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  width: 100px;
+  height: 20px;
+  border: 1px solid #000;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progressUpdate .progressUpdateColor {
+  width: 0;
+  height: 100%;
+  background-color: #0f0;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+/*# sourceMappingURL=medical.css.map */

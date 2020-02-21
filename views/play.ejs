@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="stylesheets/reset.css">
+  <link rel='stylesheet' href='stylesheets/view.css' />
+  <style>
+    body{
+      background-color: #000;
+    }
+
+
+  </style>
+</head>
+<body>
+  <span class="float_button end"><img src="images/end.svg"></span>
+  <span class="float_button coutinued"><img src="images/coutinued.svg"></span>
+  <section class="section section_view type2" id="view">
+    <div class="view_obj pick" id="obj1">
+      <img src="images/imgobj.svg">
+    </div>
+  </section>
+  <script src='javascripts/axios.min.js'></script>
+  <script src='javascripts/socket.io.js'></script>
+  <script src="javascripts/axiosItem.js"></script>
+  <script src="javascripts/sectionView.js"></script>
+  <script>
+    // 方變自己使用的function
+
+    function AEA(elementBox,elementArray){
+      elementArray.forEach(v=>{
+        elementBox.appendChild(v);
+      })
+      return elementBox;
+    }
+    function AE(elementBox,element){
+      elementBox.appendChild(element);
+      return elementBox;
+    }
+    function CE(elementType,elementClassName,elementId){
+      let element = document.createElement(elementType);
+      if(elementClassName) element.className = elementClassName;
+      if(elementId) element.id = elementId;
+      return element;
+    }
+
+    function $id(elementName) {
+      return document.getElementById(elementName)
+    }
+    function $qs(elementName) {
+      return document.querySelector(elementName)
+    }
+
+    // 方變自己使用的function
+  </script>
+  <script>
+    // config變數統一管理=========================
+    var url = 'userData/';
+    var token_key = '';
+    
+    let axiosItem     = new AxiosItem();
+    function buttonShow(comeIn){
+      let floatButton = document.getElementsByClassName('float_button');
+      if(comeIn){
+        $id('view').classList.add('come_in');
+        for (let i = 0; i < floatButton.length ; i++ ) {
+          floatButton[i].classList.add('come_in'); 
+        }
+      }else{
+        $id('view').classList.remove('come_in');
+        for (let i = 0; i < floatButton.length ; i++ ) {
+          floatButton[i].classList.remove('come_in'); 
+        }
+      }
+    }
+    class SocketItem{
+      constructor(url){
+        this.url = url;
+        this.socket;
+      }
+      init(){
+        this.socket = io.connect('ws://' + this.url, { query: "name=false" });
+        this.socket.on('playVideo',this.onPlayVideo);
+
+      }
+      Send(cmd,data){
+        this.socket.emit(cmd, data);
+      }
+      onPlayVideo(data){
+        console.log(data,'playVideo');
+        viewSocket.receiveSocket(data);
+      }
+    }
+    class ViewSocket{
+      constructor(){
+        this.playlistTime = [];          //用來清空相關的計時器
+        this.musicplaylistTime = [];     //用來清空相關的計時器
+        this.total;
+        this.dashBoardSatus = 2;
+        // 計算暫停用功能
+        this.playTime = 0;
+        this.nowTime = Date.now();
+        this.stopTime;
+      }
+      async receiveSocket(id){
+        buttonShow(false);
+        let result = await axiosItem.get('medicalrecords/dashboard/' + id);
+        this.playTime = 0;
+        this.nowTime = Date.now();
+        this.dashBoardSatus = 0;
+        console.log(result)
+        let data = result.data;
+        sectionView.musicplaylist = result.data.musicplaylist;
+        sectionView.musicBuild(id);
+        this.playlist = result.data.playlist;
+        this.playmusic  = result.data.musicplaylist;
+        this.playControl(result.data.playlist, result.data.musicplaylist);
+      }
+      async dashboardPlay (){
+        this.dashBoardSatus = 2;
+        let result = await axiosItem.get('medicalrecords/dashboard/0000000000');
+        let data = result.data;
+        sectionView.musicplaylist = result.data.musicplaylist;
+        sectionView.musicBuild('0000000000');
+        this.playControl(result.data.playlist, result.data.musicplaylist, true);
+      }
+      medicalStop (){
+        buttonShow(true);
+        this.stopTime = Date.now();
+        this.playTime += this.stopTime - this.nowTime;
+        this.playlistTime.forEach(v=>{
+          clearInterval(v);
+        })
+        this.musicplaylistTime.forEach(v=>{
+          clearInterval(v);
+        })
+        this.playlistTime =[];
+        this.musicplaylistTime =[];
+        let video = document.getElementsByTagName('video');
+        for(let i = 0; i < video.length; i++){
+          video[i].pause();
+        }
+        let audio = document.getElementsByTagName('audio');
+        for(let i = 0; i < audio.length; i++){
+          audio[i].pause();
+        }
+      }
+      medicalPlay (){
+        this.nowTime = Date.now();
+        let video = document.getElementsByTagName('video');
+        for(let i =0; i<video.length;i++){
+          video[i].play();
+        }
+        this.playControl(this.playlist, this.playmusic, false, Math.round(this.playTime / 1000));
+      }
+      // 播放控制
+      playControl (playlist, musicplaylist, loop = false, nowTime = 0){
+        buttonShow(false);
+        let allAudio = document.querySelectorAll('#backgroundMusic audio');
+        this.playlistTime.forEach(value=>{
+          clearTimeout(value);
+        })
+        this.musicplaylistTime.forEach(value=>{
+          clearTimeout(value);
+        })
+        this.total = 0;
+        playlist.forEach((value,index) => {
+          let nextTime = this.total + Number(value.time);
+          if(nowTime > nextTime){
+          }else if (nowTime >= this.total && nowTime <nextTime){
+            sectionView.sectionChange(value, true);
+          }else if(nowTime < nextTime){
+            this.playlistTime.push(setTimeout(() => {
+              sectionView.sectionChange(value, true);
+            }, (this.total - nowTime) * 1000));
+          }
+          // console.log('第' + index + '屏',this.total);
+          this.total = this.total + Number(value.time);
+        });
+        musicplaylist.forEach((value,index) => {
+          let insertTime    = Number(value.insertTime);
+          let playTime      = Number(value.playTime);
+          let total = insertTime + playTime;
+          // console.log({insertTime,playTime})
+          if(nowTime > total){
+          }else if(nowTime >= insertTime){
+            allAudio[index].play();
+            this.musicplaylistTime.push(setTimeout(() => {
+              allAudio[index].pause();
+            }, ((playTime - (nowTime - insertTime)) * 1000)))
+          }else if(nowTime < insertTime){
+            this.musicplaylistTime.push(setTimeout(() => {
+              allAudio[index].play();
+              // console.log(allAudio[index]);
+              this.musicplaylistTime.push(setTimeout(() => {
+                allAudio[index].pause();
+              }, playTime * 1000));
+            }, (insertTime - nowTime)  * 1000));
+          }
+        });
+        this.playlistTime.push(setTimeout(() => {
+          if(loop){
+            this.playControl(playlist, musicplaylist, loop);
+          }else{
+            this.dashboardPlay();
+          }
+        }, ((this.total - nowTime) * 1000) + 100));
+      }
+    }
+    let sectionView   = new SectionView(true);
+    let socketItem    = new SocketItem('<%= ip %>');
+    let viewSocket    = new ViewSocket();
+    socketItem.init();
+    viewSocket.dashboardPlay();
+    document.addEventListener('click',function(e){
+      switch (viewSocket.dashBoardSatus) {
+        case 0:
+          viewSocket.dashBoardSatus = 1;
+          viewSocket.medicalStop();
+          break;
+        case 1:
+          if(e.offsetX > document.body.offsetWidth / 2){
+            viewSocket.dashBoardSatus = 0;
+            viewSocket.medicalPlay();
+            console.log('右邊')
+          }else{
+            viewSocket.dashboardPlay();
+            console.log('右邊')
+          }
+          break;
+        case 2:
+          break;
+        default:
+          viewSocket.dashboardPlay();
+          break;
+      }
+    })
+  </script>
+</body>
+</html>

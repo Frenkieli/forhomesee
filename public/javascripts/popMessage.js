@@ -1,19 +1,3 @@
-// var css = 
-//     '#popMessage_module { '+
-//     'background: red; }',
-
-//     head = document.head || document.getElementsByTagName('head')[0],
-//     style = document.createElement('style');
-
-// head.appendChild(style);
-
-// style.type = 'text/css';
-// if (style.styleSheet) {
-//     // This is required for IE8 and below.
-//     style.styleSheet.cssText = css;
-// } else {
-//     style.appendChild(document.createTextNode(css));
-// }
 var popMessage = (function () {
     // cus追加的背景顏色與文字顏色記得寫在這邊
     let colorData = {
@@ -51,7 +35,9 @@ var popMessage = (function () {
         } else {
             pop = document.createElement("div");
             pop.id = "popMessage_module";
-            document.getElementsByTagName("body")[0].appendChild(pop);
+            setTimeout(() => {
+                document.getElementsByTagName("body")[0].appendChild(pop);
+            }, 1);
         }
         let boxStyle = pop.style;
         boxStyle.position = "fixed";

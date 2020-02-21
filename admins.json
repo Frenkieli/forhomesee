@@ -1,0 +1,22 @@
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e3cbe451e82001b30d610be"),
+	"id" : "fr123456",
+	"name" : "管理員小凡",
+	"password" : "$2b$05$yX4Lcj9gOMWT4LP4/FCgUueUVdQqjOj8gUcYK45dKDVttm/WzXAyG",
+	"permission" : NumberInt(1),
+	"socketId" : "_ra0XqNU5HAcUs2sAAAg",
+	"status" : NumberInt(0),
+	"time" : 1582277751178
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e450f3b716f3f32d8803f54"),
+	"id" : "ff123456",
+	"name" : "護理人員依娃",
+	"password" : "$2b$05$F83niGGNSjXJcfUYkcn/VuK0lhlkl/ILT3JOIVMWidSmLe.cwLwdu",
+	"permission" : NumberInt(0),
+	"socketId" : "54uRPVi9IJXJS5nzAAAD",
+	"status" : NumberInt(0),
+	"time" : 1582257676652
+},

@@ -1,0 +1,12 @@
+{
+  "apps" : [{
+    "name"        : "snoezelenTherapy",
+    "script"      : "bin/www",
+    "args"        : ["--toto=heya coco", "-d", "1"],
+    "exec_mode"   : "fork_mode",
+    "watch"       : true,
+    "ignore_watch": ["userData", "node_modules"],
+    "node_args"   : "--harmony",
+    "merge_logs"  : true
+  }]
+}

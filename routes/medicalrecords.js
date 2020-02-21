@@ -11,6 +11,12 @@ var controller = require('../controller/medicalrecords')
 router.put('/',
   jwt.jwtRouteVerify,
   controller.create)
+// 上傳病人照片
+router.put('/personalPicture/:id',
+  jwt.jwtRouteVerify,
+  controller.personalPicture1,
+  controller.personalPicture2,
+  controller.personalPicture3)
 
 
 // 修改該人員的資料
@@ -26,5 +32,22 @@ router.post('/:id',
 router.get('/:id', 
   jwt.jwtRouteVerify,
   controller.read);
+
+// 刪除該病歷號碼的資料
+
+router.delete('/:id',
+  jwt.jwtRouteVerify,
+  controller.delete);
+
+
+// 顯示屏用或取病患資料不需要驗證
+router.get('/dashboard/:id', 
+  controller.dashboardRead);
+
+// 獲取全部病歷資料
+
+router.get('/',
+  jwt.jwtRouteVerify,
+  controller.getMedical)
 
 module.exports = router;

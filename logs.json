@@ -1,0 +1,2007 @@
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e33410093f225a4eb2511"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582183217873
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e33450093f225a4eb2512"),
+	"id" : "fr123456",
+	"msg" : "更改了9876543210的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582183217873
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e33490093f225a4eb2513"),
+	"id" : "fr123456",
+	"msg" : "新增了9876543210的住民治療方案檔案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582183217873
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e33dd7db4b02cd8cc3906"),
+	"id" : "fr123456",
+	"msg" : "新增了aasdfasfasfasf的住民治療方案檔案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582183341311
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e33e77db4b02cd8cc3907"),
+	"id" : "fr123456",
+	"msg" : "刪除了aasdfasfasfasf的돼지볶음 계란 밥 pork omelet egg rice - thai street food.mp4檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582183341311
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e33eb7db4b02cd8cc3908"),
+	"id" : "fr123456",
+	"msg" : "刪除了aasdfasfasfasf的image-from-rawpixel-id-380201-jpeg.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582183341311
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e33ef7db4b02cd8cc3909"),
+	"id" : "fr123456",
+	"msg" : "刪除了aasdfasfasfasf的1.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582183341311
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e33f57db4b02cd8cc390a"),
+	"id" : "fr123456",
+	"msg" : "更改了aasdfasfasfasf的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582183341311
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e33f87db4b02cd8cc390b"),
+	"id" : "fr123456",
+	"msg" : "更改了aasdfasfasfasf的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582183341311
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e34017db4b02cd8cc390c"),
+	"id" : "fr123456",
+	"msg" : "新增了asdfasfasfasd的住民治療方案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582183341311
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e34077db4b02cd8cc390d"),
+	"id" : "fr123456",
+	"msg" : "刪除了asdfasfasfasd的住民治療方案與所有檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582183341311
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e34097db4b02cd8cc390e"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582183341311
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e340e7db4b02cd8cc3910"),
+	"id" : "fr123456",
+	"msg" : "建立了asdfasfasf的會員帳號",
+	"status" : NumberInt(1),
+	"target" : NumberInt(0),
+	"time" : 1582183341311
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e34117db4b02cd8cc3911"),
+	"id" : "fr123456",
+	"msg" : "修改了asdfasfasf的會員資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(0),
+	"time" : 1582183341311
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e34127db4b02cd8cc3912"),
+	"id" : "fr123456",
+	"msg" : "刪除了asdfasfasf的會員帳號",
+	"status" : NumberInt(3),
+	"target" : NumberInt(0),
+	"time" : 1582183341311
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e34167db4b02cd8cc3914"),
+	"id" : "fr123456",
+	"msg" : "新增了asfasfasfasfas的定位卡片",
+	"status" : NumberInt(1),
+	"target" : NumberInt(2),
+	"time" : 1582183341311
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e34197db4b02cd8cc3915"),
+	"id" : "fr123456",
+	"msg" : "更動了asfasfasfasfas的定位卡片資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(2),
+	"time" : 1582183341311
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e341a7db4b02cd8cc3916"),
+	"id" : "fr123456",
+	"msg" : "刪除了asfasfasfasfas的定位卡片",
+	"status" : NumberInt(3),
+	"target" : NumberInt(2),
+	"time" : 1582183341311
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3712425a8424443a0ead"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582184205895
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3715425a8424443a0eae"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582184205895
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e383cf294601e4026f9e6"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582184305575
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3885f294601e4026f9e7"),
+	"id" : "fr123456",
+	"msg" : "刪除了aasdfasfasfasf的住民治療方案與所有檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184305575
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3894f294601e4026f9e8"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582184305575
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3898f294601e4026f9e9"),
+	"id" : "fr123456",
+	"msg" : "刪除了asfasgasg的會員帳號",
+	"status" : NumberInt(3),
+	"target" : NumberInt(0),
+	"time" : 1582184305575
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3899f294601e4026f9ea"),
+	"id" : "fr123456",
+	"msg" : "刪除了asfasfasfasdfasf的會員帳號",
+	"status" : NumberInt(3),
+	"target" : NumberInt(0),
+	"time" : 1582184305575
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e38a0f294601e4026f9eb"),
+	"id" : "fr123456",
+	"msg" : "刪除了agassagasgasgs的定位卡片",
+	"status" : NumberInt(3),
+	"target" : NumberInt(2),
+	"time" : 1582184305575
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e38a1f294601e4026f9ec"),
+	"id" : "fr123456",
+	"msg" : "刪除了3333333333的定位卡片",
+	"status" : NumberInt(3),
+	"target" : NumberInt(2),
+	"time" : 1582184305575
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e38a5f294601e4026f9ed"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582184305575
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e38aaf294601e4026f9ee"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582184305575
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e38b0f294601e4026f9ef"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582184305575
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e38baf294601e4026f9f0"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582184305575
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e38e1f294601e4026f9f1"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582184305575
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e38e6f294601e4026f9f2"),
+	"id" : "fr123456",
+	"msg" : "刪除了asdadafffasd的住民治療方案與所有檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184305575
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e38edf294601e4026f9f3"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582184305575
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3909f294601e4026f9f4"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582184305575
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3966608d8d2efcec15b6"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582184796781
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3969608d8d2efcec15b7"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582184796781
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e397f0111f42ff8358bce"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39850111f42ff8358bcf"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39880111f42ff8358bd0"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39900111f42ff8358bd1"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39ba0111f42ff8358bd2"),
+	"id" : "fr123456",
+	"msg" : "更改了1234567890的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39ba0111f42ff8358bd3"),
+	"id" : "fr123456",
+	"msg" : "修改了1234567890的住民個人照片",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39c80111f42ff8358bd4"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的電腦用平面圖.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39ca0111f42ff8358bd5"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的01.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39ca0111f42ff8358bd6"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的1.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39cb0111f42ff8358bd7"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的10823046484053.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39cb0111f42ff8358bd8"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的1測試用平面圖.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39cb0111f42ff8358bd9"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的2.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39cb0111f42ff8358bda"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的3.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39cb0111f42ff8358bdb"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的about-us_2012.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39cb0111f42ff8358bdc"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的about-us_2016_1.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39cc0111f42ff8358bdd"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的about-us_2016_2.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39cc0111f42ff8358bde"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的aerial-shot-aerial-view-bay-1122416.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39d00111f42ff8358bdf"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的asdas.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39d00111f42ff8358be0"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的da319c5bd67eaa7b542ee91997c23ef3.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39d40111f42ff8358be1"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的personalPic.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39d40111f42ff8358be2"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的向量圖智慧型物件.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39e00111f42ff8358be3"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的1111.mp4檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39e20111f42ff8358be4"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的2222.mp4檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39e40111f42ff8358be5"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的Mayday五月天【你不是真正的快樂You Are Not Truly Happy】MV官方完整版.mp4檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39e80111f42ff8358be6"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的0000.mp4檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39eb0111f42ff8358be7"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的Mayday五月天【你不是真正的快樂You Are Not Truly Happy】MV官方完整版.mp3檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e39f30111f42ff8358be8"),
+	"id" : "fr123456",
+	"msg" : "更改了1234567890的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3a0c0111f42ff8358be9"),
+	"id" : "fr123456",
+	"msg" : "更改了1234567890的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3a0c0111f42ff8358bea"),
+	"id" : "fr123456",
+	"msg" : "修改了1234567890的住民個人照片",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3a340111f42ff8358beb"),
+	"id" : "fr123456",
+	"msg" : "更改了1234567890的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3a340111f42ff8358bec"),
+	"id" : "fr123456",
+	"msg" : "修改了1234567890的住民個人照片",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3a640111f42ff8358bed"),
+	"id" : "fr123456",
+	"msg" : "更改了9876543210的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3a640111f42ff8358bee"),
+	"id" : "fr123456",
+	"msg" : "修改了9876543210的住民個人照片",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3a710111f42ff8358bef"),
+	"id" : "fr123456",
+	"msg" : "更改了1234567890的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3a710111f42ff8358bf0"),
+	"id" : "fr123456",
+	"msg" : "修改了1234567890的住民個人照片",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3a810111f42ff8358bf1"),
+	"id" : "fr123456",
+	"msg" : "更改了9876543210的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3abc0111f42ff8358bf2"),
+	"id" : "fr123456",
+	"msg" : "新增了1234567890的住民治療方案檔案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3b1f0111f42ff8358bf3"),
+	"id" : "fr123456",
+	"msg" : "刪除了1234567890的曾經的工作桌.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3b2b0111f42ff8358bf4"),
+	"id" : "fr123456",
+	"msg" : "新增了1234567890的住民治療方案檔案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3b360111f42ff8358bf5"),
+	"id" : "fr123456",
+	"msg" : "新增了1234567890的住民治療方案檔案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3b640111f42ff8358bf6"),
+	"id" : "fr123456",
+	"msg" : "更改了1234567890的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3c640111f42ff8358bf7"),
+	"id" : "fr123456",
+	"msg" : "新增了1234567890的住民治療方案檔案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3c7e0111f42ff8358bf8"),
+	"id" : "fr123456",
+	"msg" : "更改了1234567890的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3d960111f42ff8358bf9"),
+	"id" : "fr123456",
+	"msg" : "新增了1234567890的住民治療方案檔案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3dd30111f42ff8358bfa"),
+	"id" : "fr123456",
+	"msg" : "新增了1234567890的住民治療方案檔案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e110111f42ff8358bfb"),
+	"id" : "fr123456",
+	"msg" : "更改了1234567890的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e330111f42ff8358bfc"),
+	"id" : "fr123456",
+	"msg" : "更改了1234567890的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e3d0111f42ff8358bfd"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的Namewee黃明志 ft. Anthony Perry黃秋生【China Reggaeton】@亞洲通才 Asian Polymath.mp3檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e410111f42ff8358bfe"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的0000.mp4檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e420111f42ff8358bff"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的1111.mp4檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e460111f42ff8358c00"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的2222.mp4檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e480111f42ff8358c01"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的Mayday五月天【你不是真正的快樂You Are Not Truly Happy】MV官方完整版.mp4檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e4b0111f42ff8358c02"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的Namewee黃明志 ft. Anthony Perry黃秋生【China Reggaeton】@亞洲通才 Asian Polymath.mp4檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e4d0111f42ff8358c03"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的돼지볶음 계란 밥 pork omelet egg rice - thai street food.mp4檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e540111f42ff8358c04"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的1.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e550111f42ff8358c05"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的10823046484053.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e550111f42ff8358c06"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的1測試用平面圖.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e560111f42ff8358c07"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的2.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e560111f42ff8358c08"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的3.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e580111f42ff8358c09"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的aerial-shot-aerial-view-bay-1122416.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e5c0111f42ff8358c0a"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的image-from-rawpixel-id-260268-original.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e600111f42ff8358c0b"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的P_20191125_134355.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e610111f42ff8358c0c"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的P_20191118_162551.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e630111f42ff8358c0d"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的P_20191118_162349.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e640111f42ff8358c0e"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的P_20191118_162551 (1).jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e650111f42ff8358c0f"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的image-from-rawpixel-id-928504-original.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e690111f42ff8358c10"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的image-from-rawpixel-id-400046-jpeg.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e6d0111f42ff8358c11"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的image-from-rawpixel-id-39114-jpeg.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e710111f42ff8358c12"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的image-from-rawpixel-id-380201-jpeg.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e740111f42ff8358c13"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的image-from-rawpixel-id-380192-jpeg (1).jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e780111f42ff8358c14"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的image-from-rawpixel-id-380192-jpeg.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3e7e0111f42ff8358c15"),
+	"id" : "fr123456",
+	"msg" : "更改了0000000000的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3eae0111f42ff8358c16"),
+	"id" : "fr123456",
+	"msg" : "更改了0000000000的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3ecb0111f42ff8358c17"),
+	"id" : "fr123456",
+	"msg" : "刪除了0000000000的iSmartStation.mp4檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3edd0111f42ff8358c18"),
+	"id" : "fr123456",
+	"msg" : "新增了0000000000的住民治療方案檔案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3efe0111f42ff8358c19"),
+	"id" : "fr123456",
+	"msg" : "更改了0000000000的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3f220111f42ff8358c1a"),
+	"id" : "fr123456",
+	"msg" : "更改了0000000000的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3fba0111f42ff8358c1b"),
+	"id" : "fr123456",
+	"msg" : "新增了9876543210的住民治療方案檔案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3fd60111f42ff8358c1c"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的Namewee黃明志 ft. Anthony Perry黃秋生【China Reggaeton】@亞洲通才 Asian Polymath.mp3檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3fd80111f42ff8358c1d"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的0000.mp4檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3fd90111f42ff8358c1e"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的1111.mp4檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3fda0111f42ff8358c1f"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的2222.mp4檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3fdd0111f42ff8358c20"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的1.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3fdd0111f42ff8358c21"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的10823046484053.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3fdd0111f42ff8358c22"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的1測試用平面圖.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3fdd0111f42ff8358c23"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的2.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3fdd0111f42ff8358c24"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的21911277192721_993.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3fdd0111f42ff8358c25"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的3.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3fdd0111f42ff8358c26"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的about-us_2012.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3fde0111f42ff8358c27"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的about-us_2016_1.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3fde0111f42ff8358c28"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的about-us_2016_2.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3fde0111f42ff8358c29"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的aerial-shot-aerial-view-bay-1122416.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3fe20111f42ff8358c2a"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的image-from-rawpixel-id-260268-original.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3fe60111f42ff8358c2b"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的image-from-rawpixel-id-380192-jpeg (1).jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3fe90111f42ff8358c2c"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的image-from-rawpixel-id-380192-jpeg.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3fed0111f42ff8358c2d"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的image-from-rawpixel-id-380201-jpeg.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3ff00111f42ff8358c2e"),
+	"id" : "fr123456",
+	"msg" : "更改了9876543210的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3ff10111f42ff8358c2f"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的image-from-rawpixel-id-39114-jpeg.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3ff50111f42ff8358c30"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的image-from-rawpixel-id-400046-jpeg.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3ff90111f42ff8358c31"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的image-from-rawpixel-id-928504-original.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e3ffd0111f42ff8358c32"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的overview-business-cards.jpg檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e41c90111f42ff8358c33"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e41d10111f42ff8358c34"),
+	"id" : "fr123456",
+	"msg" : "新增了9876543210的住民治療方案檔案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e41f00111f42ff8358c35"),
+	"id" : "fr123456",
+	"msg" : "更改了9876543210的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e42160111f42ff8358c36"),
+	"id" : "fr123456",
+	"msg" : "更改了9876543210的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e427a0111f42ff8358c37"),
+	"id" : "fr123456",
+	"msg" : "新增了9876543210的住民治療方案檔案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e42960111f42ff8358c38"),
+	"id" : "fr123456",
+	"msg" : "更改了9876543210的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e42db0111f42ff8358c39"),
+	"id" : "fr123456",
+	"msg" : "新增了9876543210的住民治療方案檔案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e43280111f42ff8358c3a"),
+	"id" : "fr123456",
+	"msg" : "新增了9876543210的住民治療方案檔案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e433e0111f42ff8358c3b"),
+	"id" : "fr123456",
+	"msg" : "更改了9876543210的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e43720111f42ff8358c3c"),
+	"id" : "fr123456",
+	"msg" : "刪除了9876543210的Cook - 14421.mp4檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e43780111f42ff8358c3d"),
+	"id" : "fr123456",
+	"msg" : "新增了9876543210的住民治療方案檔案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e43930111f42ff8358c3e"),
+	"id" : "fr123456",
+	"msg" : "更改了9876543210的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e44f20111f42ff8358c3f"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e4d880111f42ff8358c40"),
+	"id" : "Dashboard",
+	"msg" : "啟動了0000000000的播放清單",
+	"status" : NumberInt(0),
+	"target" : NumberInt(1),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4e4ec50111f42ff8358c41"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582184822548
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f42f639027a15d8d2c12b"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582252785015
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f435739027a15d8d2c12c"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582252785015
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f436139027a15d8d2c12d"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582252785015
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f439139027a15d8d2c12e"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582252785015
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f439539027a15d8d2c12f"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582252785015
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f43c039027a15d8d2c130"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582252785015
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f43e339027a15d8d2c131"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582252785015
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f43e539027a15d8d2c132"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582252785015
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f451b39027a15d8d2c133"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582252785015
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f453339027a15d8d2c134"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582252785015
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f456939027a15d8d2c135"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582252785015
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f45d639027a15d8d2c136"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582252785015
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f45e439027a15d8d2c137"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582252785015
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f460c74cbd427ecf2a23d"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582253570131
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f461074cbd427ecf2a23e"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582253570131
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f462374cbd427ecf2a23f"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582253570131
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f462474cbd427ecf2a240"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582253570131
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f466374cbd427ecf2a241"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582253570131
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f466574cbd427ecf2a242"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582253570131
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f46be014a121f00d4351d"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582253757530
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f4897014a121f00d4351e"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582253757530
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f48a9014a121f00d4351f"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582253757530
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f4a8f014a121f00d43520"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582253757530
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f4b2c014a121f00d43521"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582253757530
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f506e901a161d94bcc0f2"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582256231228
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f5075901a161d94bcc0f3"),
+	"id" : "fr123456",
+	"msg" : "更改了1234567890的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582256231228
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f507d901a161d94bcc0f4"),
+	"id" : "fr123456",
+	"msg" : "更改了1234567890的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582256231228
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f512c91b0732468a7f56a"),
+	"id" : "fr123456",
+	"msg" : "更改了1234567890的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582256400928
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f5292d096ca1868801cc4"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582256784108
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f540b6e5c9d0e60860a62"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582257158072
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f556e8e972a24ac71bde3"),
+	"id" : "fr123456",
+	"msg" : "更改了1234567890的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582257434172
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f55f79e745d1bc4cfe4da"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582257613750
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f560c9e745d1bc4cfe4db"),
+	"id" : "ff123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582257613750
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f56cb66d226232cdc9885"),
+	"id" : "Dashboard",
+	"msg" : "啟動了0000000000的播放清單",
+	"status" : NumberInt(0),
+	"target" : NumberInt(1),
+	"time" : 1582257866110
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f8b7c72e7ac2b60678af6"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582271350257
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f8b9372e7ac2b60678af7"),
+	"id" : "fr123456",
+	"msg" : "新增了fasdfasdf的住民治療方案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582271350257
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f97be806ad30b84c2b248"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582274482650
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f98c24185a2135c27c24e"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582274724862
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9aa060fed5224449e93f"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9ae460fed5224449e940"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9d0e60fed5224449e941"),
+	"id" : "fr123456",
+	"msg" : "刪除了fasdfasdf的住民治療方案與所有檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9d2460fed5224449e942"),
+	"id" : "fr123456",
+	"msg" : "新增了fasdfsf的住民治療方案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9d3660fed5224449e943"),
+	"id" : "fr123456",
+	"msg" : "刪除了fasdfsf的住民治療方案與所有檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9d6460fed5224449e944"),
+	"id" : "fr123456",
+	"msg" : "新增了fasdfasdf的住民治療方案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9d6660fed5224449e945"),
+	"id" : "fr123456",
+	"msg" : "新增了fasdfasdf的住民治療方案檔案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9d6860fed5224449e946"),
+	"id" : "fr123456",
+	"msg" : "刪除了fasdfasdf的住民治療方案與所有檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9d9360fed5224449e947"),
+	"id" : "fr123456",
+	"msg" : "新增了asdfasfasdf的住民治療方案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9d9760fed5224449e948"),
+	"id" : "fr123456",
+	"msg" : "刪除了asdfasfasdf的住民治療方案與所有檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9de560fed5224449e949"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9ded60fed5224449e94a"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9dfe60fed5224449e94b"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9e5f60fed5224449e94c"),
+	"id" : "fr123456",
+	"msg" : "新增了333的住民治療方案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9e6760fed5224449e94d"),
+	"id" : "fr123456",
+	"msg" : "刪除了333的住民治療方案與所有檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9e7e60fed5224449e94e"),
+	"id" : "fr123456",
+	"msg" : "新增了asdfasfasfas的住民治療方案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9e8160fed5224449e94f"),
+	"id" : "fr123456",
+	"msg" : "刪除了asdfasfasfas的住民治療方案與所有檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9eb060fed5224449e950"),
+	"id" : "fr123456",
+	"msg" : "新增了333的住民治療方案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9eba60fed5224449e951"),
+	"id" : "fr123456",
+	"msg" : "刪除了333的住民治療方案與所有檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9eda60fed5224449e952"),
+	"id" : "fr123456",
+	"msg" : "新增了333的住民治療方案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9edd60fed5224449e953"),
+	"id" : "fr123456",
+	"msg" : "刪除了333的住民治療方案與所有檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9f7460fed5224449e954"),
+	"id" : "fr123456",
+	"msg" : "新增了asdfasdfasdf的住民治療方案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9f7960fed5224449e955"),
+	"id" : "fr123456",
+	"msg" : "刪除了asdfasdfasdf的住民治療方案與所有檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9fa660fed5224449e956"),
+	"id" : "fr123456",
+	"msg" : "新增了fsdfdsafasfs的住民治療方案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9fa860fed5224449e957"),
+	"id" : "fr123456",
+	"msg" : "刪除了fsdfdsafasfs的住民治療方案與所有檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9fec60fed5224449e958"),
+	"id" : "fr123456",
+	"msg" : "新增了333的住民治療方案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4f9fef60fed5224449e959"),
+	"id" : "fr123456",
+	"msg" : "刪除了333的住民治療方案與所有檔案",
+	"status" : NumberInt(3),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4fa11b60fed5224449e95a"),
+	"id" : "fr123456",
+	"msg" : "新增了asdasdasd的住民治療方案",
+	"status" : NumberInt(1),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4fa13260fed5224449e95b"),
+	"id" : "fr123456",
+	"msg" : "更改了asdasdasd的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4fa21360fed5224449e95c"),
+	"id" : "fr123456",
+	"msg" : "登入了感官治療系統",
+	"status" : NumberInt(0),
+	"target" : NumberInt(0),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4fa23e60fed5224449e95d"),
+	"id" : "fr123456",
+	"msg" : "更改了asdasdasd的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5e4fa2d460fed5224449e95e"),
+	"id" : "fr123456",
+	"msg" : "更改了asdasdasd的住民資訊",
+	"status" : NumberInt(2),
+	"target" : NumberInt(1),
+	"time" : 1582275223098
+},

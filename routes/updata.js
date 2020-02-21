@@ -17,6 +17,7 @@ router.post('/:id',
 
 // 刪除目標檔案
 router.delete('/',
+  jwt.jwtRouteVerify,
   controller.delete);
 
 // 撈取該病例目前擁有的檔案

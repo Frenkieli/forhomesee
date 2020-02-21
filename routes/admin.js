@@ -24,9 +24,23 @@ router.post('/',
   validata(paramValidation.loginadmin),
   controller.login);
 
+
+// 修改人員資訊
+router.post('/modify/:id',
+  jwt.jwtRouteVerify,
+  controller.modifyMember);
+
+// 取得目前所有人員資訊
+router.get('/',
+  jwt.jwtRouteVerify,
+  controller.getMemberInfo);
 // router.delete('/',
 //   controller.delete);
 
+// 刪除目前人員
+router.delete('/:id',
+  jwt.jwtRouteVerify,
+  controller.deleteMember)
 
 // router.get('/:id', controller.read);
 

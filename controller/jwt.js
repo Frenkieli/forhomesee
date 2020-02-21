@@ -1,4 +1,5 @@
 var jwt = require('jsonwebtoken');
+const socket = require('../socket/socket');
 
 let index ={};
 
@@ -8,7 +9,7 @@ index.jwtVerify = function(token) {
         if(err){
           resole(false);
         }else{
-          resole(payload.payload.id);
+          resole(payload);
         }
     });
   })
@@ -32,4 +33,5 @@ index.jwtRouteVerify =  function(req, res, next) {
     res.send('驗證失敗');
   }
 }
+
 module.exports = index;
